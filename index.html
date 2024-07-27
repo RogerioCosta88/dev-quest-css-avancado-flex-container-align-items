@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Quest: Flex Container: Align Items</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Flex Conteiner Align Items</h1>
+    <p>O <strong>align-items</strong> é usado para posicionar os elementos verticalmente, seu efeito é melhor notado quando os elementos estão em pelo menos <i>duas linhas</i>. Os elementos devem estar dentro de uma <strong>div.pai</strong> e é essa <strong>div.pai</strong> que receberá o <i>estilo</i> de <strong>align-items</strong>.</p>
+
+    <section>
+        <h2>flex-start</h2>
+        <p><strong>Flex-start</strong> é o <i>valor</i> padrão do <strong>align-items</strong>, os elementos ficam no começo do <strong>eixo-transversal</strong>.</p>
+        <div class="container flex-start">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>flex-end</h2>
+        <p>Já o <strong>flex-end</strong> se comporta de forma inversa ao <strong>flex-start</strong>. O <strong>flex-end</strong> posiciona os elementos no fim do <strong>eixo-transversal</strong>.</p>
+        <div class="container flex-end">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section> 
+
+    <section>
+        <h2>center</h2>
+        <p>O <i>valor</i> <strong>center</strong> alinha os elementos verticalmente ao centro.</p>
+        <div class="container center">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>stretch</h2>
+        <p>O <strong>stretch</strong> posiciona os elementos no topo do <strong>eixo-transversal</strong>, mas diferente do <strong>flex-start</strong>, o <strong>stretch</strong> também estica os elemento até preencher toda a altura do <strong>container</strong>. <mark>ATENÇÃO</mark>: para que o <i>valor</i> do <strong>stretch</strong> funcione, as <strong>div.filhas</strong> não podem ter um tamanho de <strong>height</strong> definido</p>
+        <div class="container stretch">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>baseline</h2>
+        <p>O <strong>baseline</strong> padroniza a base da primeir linha dos elementos, independênte do tamanho do conteúdo de cada elemento.</p>
+        <div class="container baseline">
+            <div class="item item1">1</div>
+            <div class="item item2">2</div>
+            <div class="item item3">3</div>
+        </div>
+    </section>
+    
+</body>
+</html>
